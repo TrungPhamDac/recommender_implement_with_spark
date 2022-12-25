@@ -254,14 +254,9 @@
                  </a>
               </div>
            </article>
-            
-            
-        
-           
-           
         </div>
-     </section>
-     <div class="clearfix"></div>
+      </section>
+      <div class="clearfix"></div>
       <section id="halim-advanced-widget-2">
         <div class="section-heading">
            <a href="danhmuc.html" title="Phim Lẻ">
@@ -284,8 +279,6 @@
                  </a>
               </div>
            </article>
-           
-           
            <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item post-37606">
               <div class="halim-item">
                  <a class="halim-thumb" href="chitiet.html">
@@ -295,7 +288,6 @@
                     <div class="halim-post-title-box">
                        <div class="halim-post-title ">
                           <p class="entry-title">Gã Hề Điên Loạn 2</p>
-                          
                        </div>
                     </div>
                  </a>
@@ -310,7 +302,6 @@
                     <div class="halim-post-title-box">
                        <div class="halim-post-title ">
                           <p class="entry-title">Gã Hề Điên Loạn 2</p>
-                          
                        </div>
                     </div>
                  </a>
@@ -325,21 +316,72 @@
                     <div class="halim-post-title-box">
                        <div class="halim-post-title ">
                           <p class="entry-title">Gã Hề Điên Loạn 2</p>
-                          
                        </div>
                     </div>
                  </a>
               </div>
            </article>
-
-           
-           
-           
         </div>
-     </section>
-     <div class="clearfix"></div>
-  </main>
-  <aside id="sidebar" class="col-xs-12 col-sm-12 col-md-4">
+      </section>
+      <div class="clearfix"></div>
+      <section id="halim-advanced-widget-2">
+         <div class="section-heading">
+            <a href="danhmuc.html" title="Phim Lẻ">
+            <span class="h-text">Đánh giá cao</span>
+            </a>
+         </div>
+         <div id="halim-advanced-widget-4-ajax-box" class="halim_box">
+            {% for movie in top_rating_movies %}
+               <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
+               <div class="halim-item">
+                  <a class="halim-thumb" style='overflow: hidden;' href="/detail/{{ movie.movieId }}" title="{{movie.title}}">
+                     <img class="lazy img-responsive" src="https://image.tmdb.org/t/p/w200{{movie.posterPath}}" alt="{{movie.title}}" title="{{movie.title}}">
+                     <span class="status">HD</span><span class="episode"><i class="fa fa-play" aria-hidden="true"></i>Vietsub</span> 
+                     <div class="icon_overlay"></div>
+                     <div class="halim-post-title-box">
+                        <div class="halim-post-title ">
+                           <p class="entry-title">{{movie.title}}</p>
+
+                        </div>
+                     </div>
+                  </a>
+               </div>
+            </article>
+            {% endfor %}
+         </div>
+      </section>
+      <div class="clearfix"></div>
+
+      <section id="halim-advanced-widget-2">
+         <div class="section-heading">
+            <a href="danhmuc.html" title="Phim Lẻ">
+            <span class="h-text">Mới ra mắt</span>
+            </a>
+         </div>
+         <div id="halim-advanced-widget-4-ajax-box" class="halim_box">
+            {% for movie in latest_movies %}
+               <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
+               <div class="halim-item">
+                  <a class="halim-thumb" style='overflow: hidden;' href="/detail/{{ movie.movieId }}" title="{{movie.title}}">
+                     <img class="lazy img-responsive" src="https://image.tmdb.org/t/p/w200{{movie.posterPath}}" alt="{{movie.title}}" title="{{movie.title}}">
+                     <span class="status">HD</span><span class="episode"><i class="fa fa-play" aria-hidden="true"></i>Vietsub</span> 
+                     <div class="icon_overlay"></div>
+                     <div class="halim-post-title-box">
+                        <div class="halim-post-title ">
+                           <p class="entry-title">{{movie.title}}</p>
+
+                        </div>
+                     </div>
+                  </a>
+               </div>
+            </article>
+            {% endfor %}
+         </div>
+      </section>
+      <div class="clearfix"></div>
+
+   </main>
+   <aside id="sidebar" class="col-xs-12 col-sm-12 col-md-4">
      <div id="halim_tab_popular_videos-widget-7" class="widget halim_tab_popular_videos-widget">
         <div class="section-bar clearfix">
            <div class="section-title">
@@ -455,10 +497,7 @@
                        </span>
                     </div>
                  </div>
-                 
-                
-                
-                
+
               </div>
            </div>
         </section>
